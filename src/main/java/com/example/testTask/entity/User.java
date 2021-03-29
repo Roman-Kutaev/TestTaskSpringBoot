@@ -13,5 +13,6 @@ public class User {
     @NonNull
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private int id;
-    private String fio = "Test Testov";
+    @NonNull
+    private String fio;
 }

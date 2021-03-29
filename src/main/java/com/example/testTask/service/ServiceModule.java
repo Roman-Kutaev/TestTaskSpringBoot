@@ -9,6 +9,7 @@ public class ServiceModule {
 
     public ResponseEntity<?> doEquals(User user) {
         if (user.getId() == 1) {
+            user.setFio("Test Testov");
             return ResponseEntity.ok(user);
         } else
             return ResponseEntity.ok().body(null);
